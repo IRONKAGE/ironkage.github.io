@@ -68,6 +68,30 @@ header {
         /* max-width: 20vw; */
         }
 
+    .Syntax th {
+        /* display: block; */
+        position: sticky;
+        top: 0;
+        background: radial-gradient(ellipse at bottom, #1b2735 -100%, #090a0f 100%);
+        /* overflow: auto; */
+
+        /* position: relative; */
+        /* display: block; */
+
+        /* visibility: hidden; */
+        /* clear: both; */
+    }
+    
+    th.row {
+        /* display: block; */
+        position: sticky;
+        top: 50;
+        /* background-color: #000000; */
+
+        /* visibility: hidden; */
+        /* clear: both; */
+    }
+
 /* table.ProgramLanguage {
     margin-left: auto;
     margin-right: auto;
