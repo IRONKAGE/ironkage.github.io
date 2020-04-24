@@ -1,8 +1,8 @@
 header {
     text-align: center;
     font-style: italic;
-    top: 15px;
-    position: sticky;
+    /* top: 15px; */
+    /* position: sticky; */
 }
 
     .HeadText {
@@ -52,6 +52,19 @@ header {
             color: #146c80;
         }
     }
+
+    /* .LanguageTable {
+        overflow-y: 100px;
+        height: 100px;
+    } */
+
+    .LanguageTable {
+        align-items: center;
+        text-align: center;
+        height: 85vh;
+        overflow: auto;
+        max-width: 20vw;
+        }
 
 /* table.ProgramLanguage {
     margin-left: auto;
