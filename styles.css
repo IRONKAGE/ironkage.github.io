@@ -82,10 +82,10 @@ header {
         /* clear: both; */
     }
     
-    th.row {
-        /* display: block; */
-        position: sticky;
-        top: 50;
+    .Colum th {
+        display: block;
+        position: fixed;
+        top: 0;
         /* background-color: #000000; */
 
         /* visibility: hidden; */
