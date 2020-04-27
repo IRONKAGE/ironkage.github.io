@@ -75,6 +75,7 @@ header {
             position: sticky;
             left: 0;
             z-index: 0;
+            vertical-align: middle;
             background: radial-gradient(ellipse at top, #1b2735 -100%, #090a0f 100%);
         }
 
@@ -94,19 +95,12 @@ header {
             background: radial-gradient(ellipse at bottom, #1b2735 -100%, #090a0f 100%);
         }
 
-        [scope=column], [scope=static], [scope=row], [scope=collum] {
+        [scope=column], [scope=static], [scope=row], td[scope=collum] {
             min-width: 11em;
             max-width: 11em;
             text-align: center;
-        } 
-
-table.ProgramLanguage {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-}
-
+            vertical-align: middle;
+        }
 
 /* Star Animation */
 html body{
