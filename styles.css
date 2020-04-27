@@ -1,8 +1,8 @@
 header {
     text-align: center;
     font-style: italic;
-    /* top: 15px; */
-    /* position: sticky; */
+    top: 1.5vw;
+    position: sticky;
 }
 
     .HeadText {
@@ -53,55 +53,59 @@ header {
         }
     }
 
-    /* .LanguageTable {
-        overflow-y: 100px;
-        height: 100px;
-    } */
-
-    .LanguageTable {
+    .fixed_header {
+        display: block;
+        table-layout: fixed;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
         height: 85vh;
-        width: 95%;
+        width: 90%;
         overflow: auto;
-        /* max-width: 20vw; */
         }
 
-    .Syntax th {
-        /* display: block; */
-        position: sticky;
-        top: 0;
-        background: radial-gradient(ellipse at bottom, #1b2735 -100%, #090a0f 100%);
-        /* overflow: auto; */
+        .fixed_header tbody{
+            margin-left: auto;
+            margin-right: auto;
+            height: 85vh;
+            width: 90%;
+            overflow: auto;
+        }
 
-        /* position: relative; */
-        /* display: block; */
+        .fixed_header tbody tr th {
+            position: sticky;
+            left: 0;
+            z-index: 0;
+            background: radial-gradient(ellipse at top, #1b2735 -100%, #090a0f 100%);
+        }
 
-        /* visibility: hidden; */
-        /* clear: both; */
-    }
-    
-    .Colum th {
-        display: block;
-        position: fixed;
-        top: 0;
-        /* background-color: #000000; */
+        .fixed_header thead {
+            display: block;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            width: fit-content;
+            background: radial-gradient(ellipse at bottom, #1b2735 -100%, #090a0f 100%);
+        }
+        
+        th[scope=static] {
+            position: sticky;
+            left: 0;
+            z-index: 2;
+            background: radial-gradient(ellipse at bottom, #1b2735 -100%, #090a0f 100%);
+        }
 
-        /* visibility: hidden; */
-        /* clear: both; */
-    }
+        [scope=column], [scope=static], [scope=row], [scope=collum]{
+            min-width: 10em;
+            max-width: 10em;
+            text-align: center;
+        } 
 
-/* table.ProgramLanguage {
+table.ProgramLanguage {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
 }
-
-tr th {
-    border: 2px solid;
-} */
 
 
 /* Star Animation */
