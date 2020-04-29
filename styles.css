@@ -100,6 +100,8 @@ header {
             max-width: 11em;
             text-align: center;
             vertical-align: middle;
+            overflow-wrap:break-word;
+            white-space: pre-wrap;
         }
 
 /* Star Animation */
